@@ -1,5 +1,6 @@
 import {defineCustomElements} from '../loader';
 defineCustomElements();
+import '../src/global-variables.css'; // Your local styles
 
 /** @type { import('@storybook/html').Preview } */
 const preview = {
