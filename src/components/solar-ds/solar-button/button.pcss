@@ -1,0 +1,67 @@
+:host {
+  --blackAlpha: rgba(61, 61, 61, 0.94);
+  --whiteAlpha: rgba(255, 255, 255, 0.94);
+}
+
+/* Primary */
+button {
+  background-color: var(--axpo-red);
+  border: 1px solid transparent;
+  color: white;
+  padding: 11px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 32px;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: var(--axpo-red-interaction);
+  }
+}
+
+/* Outlined variant */
+button.outlined {
+  background: none;
+  border: 1px solid var(--axpo-red);
+  color: var(--axpo-red);
+
+  &:hover {
+    background: var(--axpo-red);
+    border-color: var(--axpo-red);
+    color: var(--whiteAlpha);
+  }
+}
+
+button.outlined-secondary {
+  background: none;
+  border: 1px solid var(--axpo-gray);
+  color: var(--blackAlpha);
+
+  &:hover {
+    background: var(--axpo-gray);
+    color: var(--whiteAlpha);
+  }
+}
+
+
+
+button.success {
+  background-color: #4CAF50;
+}
+
+button.success:hover {
+  background-color: #45a049;
+}
+
+button.danger {
+  background-color: #dc3545;
+}
+
+button.danger:hover {
+  background-color: #c82333;
+}
