@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default      |
-| -------- | --------- | ----------- | -------- | ------------ |
-| `label`  | `label`   |             | `string` | `'Click me'` |
+| Property | Attribute | Description | Type     | Default     |
+| -------- | --------- | ----------- | -------- | ----------- |
+| `type`   | `type`    |             | `string` | `'primary'` |
 
 
 ----------------------------------------------
