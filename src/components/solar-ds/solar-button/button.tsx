@@ -6,8 +6,9 @@ import { Component, Prop, State, h } from '@stencil/core';
   shadow: true,
 })
 export class SolarButton {
-  // @Prop() label: string = 'Button';
-  @Prop() type = 'primary';
+  @Prop() label: string = 'Button';
+  @Prop() type: string = 'primary';
+  @Prop() size: string = 'medium';
 
   @State() counter: number = 0;
 
@@ -18,7 +19,8 @@ export class SolarButton {
 
   render() {
     return (
-      <button class={this.type} onClick={this.handleClick}>
+      // this handling of classes is rather ugly
+      <button class={this.type + ' ' + this.size} onClick={this.handleClick}>
         <slot /> ({this.counter})
       </button>
     );

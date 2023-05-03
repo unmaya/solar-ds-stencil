@@ -21,6 +21,8 @@ export namespace Components {
         "middle": string;
     }
     interface SolarButton {
+        "label": string;
+        "size": string;
         "type": string;
     }
 }
@@ -58,6 +60,8 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface SolarButton {
+        "label"?: string;
+        "size"?: string;
         "type"?: string;
     }
     interface IntrinsicElements {
