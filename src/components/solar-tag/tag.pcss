@@ -1,0 +1,83 @@
+:host {
+  --blackAlpha: rgba(61, 61, 61, 0.94);
+  --whiteAlpha: rgba(255, 255, 255, 0.94);
+
+  --primaryColor: var(--axpo-red);
+  --secondaryColor: var(--axpo-gray-dark);
+  --interactionColor: var(--axpo-red-interaction);
+  --textColor: var(--primaryColor);
+}
+
+/* Primary */
+span {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 12px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 3px;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-weight: 600;
+
+  &.filled {
+    background-color: var(--primaryColor);
+  }
+
+  &:hover {
+    background-color: var(--interactionColor);
+  }
+
+  &.small {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  &.medium {
+    font-size: 14px;
+  }
+}
+
+
+span.outlined {
+  background: none;
+  color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+  border-radius: 3px;
+
+  &:hover {
+    background: var(--interactionColor);
+    color: var(--whiteAlpha);
+  }
+}
+
+
+span.black {
+  --primaryColor: var(--secondaryColor);
+  --interactionColor: var(--secondaryColor);
+}
+
+
+span.success {
+  --primaryColor: var(--axpo-success);
+  --interactionColor: var(--axpo-success);
+}
+
+span.danger {
+  --primaryColor: var(--axpo-danger);
+  --interactionColor: var(--axpo-danger);
+}
+
+span.blue {
+  --primaryColor: var(--axpo-blue);
+  --interactionColor: var(--axpo-blue);
+}
+

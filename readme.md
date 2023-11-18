@@ -1,6 +1,8 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fafc3a03-5dc8-4753-b387-18dcf39906cf/deploy-status)](https://app.netlify.com/sites/sds-poc/deploys)
+
 # Stencil Component Starter
 
-This is a starter project for building a standalone Web Component using Stencil.
+Starter project for building a standalone Web Component using Stencil.
 
 # Stencil
 

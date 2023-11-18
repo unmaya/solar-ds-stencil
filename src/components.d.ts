@@ -11,6 +11,11 @@ export namespace Components {
         "size": string;
         "type": string;
     }
+    interface SolarTag {
+        "color": string;
+        "label": string;
+        "variant": string;
+    }
 }
 declare global {
     interface HTMLSolarButtonElement extends Components.SolarButton, HTMLStencilElement {
@@ -19,8 +24,15 @@ declare global {
         prototype: HTMLSolarButtonElement;
         new (): HTMLSolarButtonElement;
     };
+    interface HTMLSolarTagElement extends Components.SolarTag, HTMLStencilElement {
+    }
+    var HTMLSolarTagElement: {
+        prototype: HTMLSolarTagElement;
+        new (): HTMLSolarTagElement;
+    };
     interface HTMLElementTagNameMap {
         "solar-button": HTMLSolarButtonElement;
+        "solar-tag": HTMLSolarTagElement;
     }
 }
 declare namespace LocalJSX {
@@ -29,8 +41,14 @@ declare namespace LocalJSX {
         "size"?: string;
         "type"?: string;
     }
+    interface SolarTag {
+        "color"?: string;
+        "label"?: string;
+        "variant"?: string;
+    }
     interface IntrinsicElements {
         "solar-button": SolarButton;
+        "solar-tag": SolarTag;
     }
 }
 export { LocalJSX as JSX };
@@ -38,6 +56,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "solar-button": LocalJSX.SolarButton & JSXBase.HTMLAttributes<HTMLSolarButtonElement>;
+            "solar-tag": LocalJSX.SolarTag & JSXBase.HTMLAttributes<HTMLSolarTagElement>;
         }
     }
 }
