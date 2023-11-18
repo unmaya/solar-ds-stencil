@@ -18,6 +18,8 @@ button {
   cursor: pointer;
   border-radius: 32px;
   box-sizing: border-box;
+  text-transform: capitalize;
+  font-weight: 600;
 
   &:hover {
     background-color: var(--axpo-red-interaction);
@@ -26,6 +28,10 @@ button {
   &.small {
     font-size: 12px;
     padding: 8px 16px;
+  }
+
+  &.medium {
+    font-size: 14px;
   }
 }
 
@@ -44,11 +50,11 @@ button.outlined {
 
 button.secondary {
   background: none;
-  border: 1px solid var(--axpo-gray);
+  border: 1px solid var(--axpo-gray-dark);
   color: var(--blackAlpha);
 
   &:hover {
-    background: var(--axpo-gray);
+    background: var(--axpo-gray-dark);
     color: var(--whiteAlpha);
   }
 }
@@ -56,17 +62,17 @@ button.secondary {
 
 
 button.success {
-  background-color: #4CAF50;
+  background-color: var(--solar-success);
 }
 
 button.success:hover {
-  background-color: #45a049;
+  background-color: var(--solar-success);
 }
 
 button.danger {
-  background-color: #dc3545;
+  background-color: var(--solar-danger);
 }
 
 button.danger:hover {
-  background-color: #c82333;
+  background-color: var(--solar-danger);
 }

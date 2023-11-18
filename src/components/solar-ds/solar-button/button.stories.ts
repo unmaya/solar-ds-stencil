@@ -1,5 +1,5 @@
 export default {
-  // this creates a ‘Components’ folder and a ‘MyComponent’ subfolder
+  // this creates a ‘Components’ group and a ‘Button’ item
   title: 'Components/Button',
   tags: ['autodocs'],
 
@@ -24,18 +24,18 @@ export const Secondary = Template.bind({});
 
 Primary.args = {
   type: 'primary',
-  label: 'primary',
-  size: 'small',
+  label: 'Button',
+  size: 'medium',
 };
 
 Outlined.args = {
   type: 'outlined',
-  label: 'outlined',
-  size: 'small',
+  label: 'Button',
+  size: 'medium',
 };
 
 Secondary.args = {
   type: 'secondary',
-  label: 'secondary',
-  size: 'small',
+  label: 'Button',
+  size: 'medium',
 };

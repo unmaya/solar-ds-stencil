@@ -2,29 +2,52 @@
 
 :root {
   --axpo-red: #FF5D64;
-  --axpo-red-interaction: #F2354D;
   --axpo-red-light: #F89AA6;
-  --axpo-red-error: #B00020;
-  --axpo-red-disabled: #ECDCDD;
+  --axpo-red-interaction: #F2354D;
   --axpo-blue: #4545CF;
   --axpo-blue-medium: #A2A2E7;
   --axpo-blue-light: #DADAF5;
   --axpo-aqua: #00ECD1;
   --axpo-aqua-light: #AAF9F0;
-  --axpo-gray: #3D3D3D;
-  --axpo-gray-light: #D8D8D8;
   --axpo-yellow: #FFED57;
   --axpo-yellow-light: #FFEDB3;
-  --solar-gray-0: #F8F8F8;
-  --solar-gray-1: #EFEFEF;
-  --solar-gray-2: #D6D6D6;
-  --solar-gray-3: #BEBEBE;
-  --solar-gray-4: #9E9E9E;
-  --solar-gray-5: #7E7E7E;
-  --solar-gray-6: #5D5D5D;
-  --solar-gray-7: #3D3D3D;
-  --solar-gray-8: #292929;
-  --solar-gray-9: #1F1F1F;
+  --axpo-tech-renewables: #85BE4C;
+  --axpo-tech-biomass: #F1D392;
+  --axpo-tech-batteries: #F5B700;
+  --axpo-tech-hydro: var(--axpo-blue);
+  --axpo-tech-hydro-1: var(--axpo-blue-light);
+  --axpo-tech-hydro-2: var(--axpo-blue-medium);
+  --axpo-tech-hydro-3: #7474DC;
+  --axpo-tech-pv: var(--axpo-yellow);
+  --axpo-tech-pv-1: #FFF8D9;
+  --axpo-tech-pv-2: #FFF6AB;
+  --axpo-tech-wind: var(--axpo-aqua); 
+  --axpo-tech-wind-1: var(--axpo-aqua-light); 
+  --axpo-tech-wind-2: #55F2E0; 
+  --axpo-tech-nuclear: ##5F5F5F;
+  --axpo-tech-hydrogen: #00C5AE;
+  --axpo-tech-hydrogen-1: #009D8A;
+  --axpo-tech-gas: var(--axpo-gray-light);
+  --axpo-other-1: var(--axpo-red);
+  --axpo-other-2: #81A4CD;
+  --axpo-other-3: #C589E8;
+  --axpo-other-4: #C69DA5;
+  --axpo-other-5: #215169;
+  --axpo-success: #00A486;
+  --axpo-danger: #B00020;
+  --axpo-disabled: #ECDCDD;
+  --axpo-gray-dark: #3D3D3D;
+  --axpo-gray-light: #D8D8D8;
+  --axpo-gray-0: #F8F8F8;
+  --axpo-gray-1: #EFEFEF;
+  --axpo-gray-2: #D6D6D6;
+  --axpo-gray-3: #BEBEBE;
+  --axpo-gray-4: #9E9E9E;
+  --axpo-gray-5: #7E7E7E;
+  --axpo-gray-6: #5D5D5D;
+  --axpo-gray-7: #3D3D3D;
+  --axpo-gray-8: #292929;
+  --axpo-gray-9: #1F1F1F;
 }
 
 html,
