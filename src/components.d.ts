@@ -10,6 +10,7 @@ export namespace Components {
         "label": string;
         "size": string;
         "type": string;
+        "variant": string;
     }
     interface SolarTag {
         "color": string;
@@ -40,6 +41,7 @@ declare namespace LocalJSX {
         "label"?: string;
         "size"?: string;
         "type"?: string;
+        "variant"?: string;
     }
     interface SolarTag {
         "color"?: string;

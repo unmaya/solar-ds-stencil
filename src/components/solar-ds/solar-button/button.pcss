@@ -1,13 +1,17 @@
 :host {
   --blackAlpha: rgba(61, 61, 61, 0.94);
   --whiteAlpha: rgba(255, 255, 255, 0.94);
+
+  --primaryColor: var(--axpo-red);
+  --secondaryColor: var(--axpo-gray-dark);
+  --interactionColor: var(--axpo-red-interaction);
+  --textColor: white;
 }
 
 /* Primary */
-button {
-  background-color: var(--axpo-red);
-  border: 1px solid transparent;
-  color: white;
+button { 
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
   padding: 11px 24px;
   text-align: center;
   text-decoration: none;
@@ -21,8 +25,13 @@ button {
   text-transform: capitalize;
   font-weight: 600;
 
+  &.filled {
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+  }
+
   &:hover {
-    background-color: var(--axpo-red-interaction);
+    background-color: var(--interactionColor);
   }
 
   &.small {
@@ -37,29 +46,42 @@ button {
 
 /* Outlined variant */
 button.outlined {
+  --textColor: var(--primaryColor);
+
   background: none;
-  border: 1px solid var(--axpo-red);
-  color: var(--axpo-red);
+  border: 1px solid var(--primaryColor);
 
   &:hover {
-    background: var(--axpo-red);
-    border-color: var(--axpo-red);
-    color: var(--whiteAlpha);
-  }
-}
-
-button.secondary {
-  background: none;
-  border: 1px solid var(--axpo-gray-dark);
-  color: var(--blackAlpha);
-
-  &:hover {
-    background: var(--axpo-gray-dark);
+    background: var(--primaryColor);
+    border-color: var(--primaryColor);
     color: var(--whiteAlpha);
   }
 }
 
 
+button.black {
+  --primaryColor: var(--axpo-gray-dark);
+  --interactionColor: var(--axpo-gray-9);
+  --textColor: var(--whiteAlpha);
+
+  &:hover {
+    color: var(--whiteAlpha);
+  }
+}
+
+/* Outlined variant */
+button.ghost {
+  --textColor: var(--primaryColor);
+
+  background: none;
+  border: none;
+
+  &:hover {
+    background: none;
+    border-color: var(--primaryColor);
+    color: var(--interactionColor);
+  }
+}
 
 button.success {
   background-color: var(--solar-success);

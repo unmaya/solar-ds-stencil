@@ -11,31 +11,46 @@ export default {
     },
     type: {
       control: { type: 'select' },
-      options: ['primary', 'outlined', 'secondary'],
+      options: ['filled', 'outlined', 'ghost'],
+    },
+    variant: {
+      control: { type: 'select' },
+      options: ['red', 'black'],
     },
   },
 };
 
-const Template = (args) => `<solar-button type="${args.type}" size="${args.size}">${args.label}</solar-button>`;
+const Template = (args) => `<solar-button variant="${args.variant}" type="${args.type}" size="${args.size}">${args.label}</solar-button>`;
 
 export const Primary = Template.bind({});
-export const Outlined = Template.bind({});
 export const Secondary = Template.bind({});
+export const Outlined = Template.bind({});
+export const Ghost = Template.bind({});
 
 Primary.args = {
-  type: 'primary',
-  label: 'Button',
+  type: 'filled',
+  variant: 'red',
   size: 'medium',
+  label: 'Button',
+};
+
+Secondary.args = {
+  type: 'filled',
+  variant: 'black',
+  size: 'medium',
+  label: 'Button',
 };
 
 Outlined.args = {
   type: 'outlined',
-  label: 'Button',
+  variant: 'red',
   size: 'medium',
+  label: 'Button',
 };
 
-Secondary.args = {
-  type: 'secondary',
-  label: 'Button',
+Ghost.args = {
+  type: 'ghost',
+  variant: 'black',
   size: 'medium',
+  label: 'Button',
 };

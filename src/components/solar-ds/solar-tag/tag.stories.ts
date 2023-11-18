@@ -19,36 +19,36 @@ const Template = (args) => `<solar-tag variant="${args.variant}" color="${args.c
 
 export const red = Template.bind({});
 export const black = Template.bind({});
+export const blue = Template.bind({});
 export const success = Template.bind({});
 export const danger = Template.bind({});
-export const blue = Template.bind({});
 
 red.args = {
+  variant: 'filled',
   color: 'red',
   label: 'Tag',
-  variant: 'filled',
 };
 
 black.args = {
+  variant: 'filled',
   color: 'black',
   label: 'Tag',
-  variant: 'filled',
 };
 
 success.args = {
+  variant: 'filled',
   color: 'success',
   label: 'Tag',
-  variant: 'filled',
 };
 
 danger.args = {
+  variant: 'filled',
   color: 'danger',
   label: 'Tag',
-  variant: 'filled',
 };
 
 blue.args = {
+  variant: 'filled',
   color: 'blue',
   label: 'Tag',
-  variant: 'filled',
 };
