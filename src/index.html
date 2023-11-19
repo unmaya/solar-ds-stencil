@@ -14,19 +14,57 @@
 
     <main>
       <h1>Solar DS</h1>
-      <h2>Web Components & Stencil</h2>
-      <my-component first="Solar DS" last="Stencil Project"></my-component>
 
-      <h3>Button Primary</h3>
-      <p>
-        <solar-button label="Primary">Primary</solar-button>
+      <section class="intro">
+        <h2>Web Components</h2>
+
+        <p>This is a simple proof of concept for our design system, the goal is to better connect design with code while centralizing documentation.</p>
+        <p>Components are built using Stencil JS with Storyboook for documentation.</p>
+      </section>
+
+      <h3>Button</h3>
+
+      <section class="preview">
+        <h4>Types</h4>
+        <p>
+        <!-- default button -->
+        <solar-button>Filled</solar-button>
+        <!-- Use slot for label -->
         <solar-button type="outlined">Ourlined</solar-button>
-      </p>
+        <!-- Transparent button -->
+        <solar-button type="ghost">Ghost</solar-button>
+        </p>
+        
+        <h4>Variants</h4>
+        <p>
+        <solar-button variant="black">Black</solar-button>
+        <solar-button variant="black" type="outlined">Black</solar-button>
+        </p>
 
-      <h3>Button Secondary</h3>
-      <p>
-        <solar-button type="secondary">Secondary</solar-button>
-      </p>
+        <h4>Sizes</h4>
+        <p>
+        <solar-button size="large" variant="black" type="outlined">Large</solar-button>
+        <solar-button size="medium" variant="black" type="outlined">Medium</solar-button>
+        <solar-button size="small" variant="black" type="outlined">Small</solar-button>
+        </p>
+      </section>
+
+
+      <h3>Tag</h3>
+
+      <section class="preview">
+        <h4>Variants</h4>
+        <p>
+          <solar-tag>Axpo</solar-tag>
+          <solar-tag variant="outlined">Axpo</solar-tag>
+          <solar-tag color="black">Axpo</solar-tag>
+          <solar-tag color="success">Axpo</solar-tag>
+          <solar-tag color="blue">Axpo</solar-tag>
+          <solar-tag variant="outlined" color="black">Axpo</solar-tag>
+          <solar-tag variant="outlined" color="success">Axpo</solar-tag>
+          <solar-tag variant="outlined" color="blue">Axpo</solar-tag>
+        </p>
+      </section>
     </main>
 
   </body>

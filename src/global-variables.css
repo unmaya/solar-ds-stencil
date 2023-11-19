@@ -1,54 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
+/* Axpo brand and Solar DS colors */
 :root {
-  --axpo-red: #FF5D64;
-  --axpo-red-light: #F89AA6;
-  --axpo-red-interaction: #F2354D;
-  --axpo-blue: #4545CF;
-  --axpo-blue-medium: #A2A2E7;
-  --axpo-blue-light: #DADAF5;
-  --axpo-aqua: #00ECD1;
-  --axpo-aqua-light: #AAF9F0;
-  --axpo-yellow: #FFED57;
-  --axpo-yellow-light: #FFEDB3;
-  --axpo-tech-renewables: #85BE4C;
-  --axpo-tech-biomass: #F1D392;
-  --axpo-tech-batteries: #F5B700;
-  --axpo-tech-hydro: var(--axpo-blue);
-  --axpo-tech-hydro-1: var(--axpo-blue-light);
-  --axpo-tech-hydro-2: var(--axpo-blue-medium);
-  --axpo-tech-hydro-3: #7474DC;
-  --axpo-tech-pv: var(--axpo-yellow);
-  --axpo-tech-pv-1: #FFF8D9;
-  --axpo-tech-pv-2: #FFF6AB;
-  --axpo-tech-wind: var(--axpo-aqua); 
-  --axpo-tech-wind-1: var(--axpo-aqua-light); 
-  --axpo-tech-wind-2: #55F2E0; 
-  --axpo-tech-nuclear: ##5F5F5F;
-  --axpo-tech-hydrogen: #00C5AE;
-  --axpo-tech-hydrogen-1: #009D8A;
-  --axpo-tech-gas: var(--axpo-gray-light);
-  --axpo-other-1: var(--axpo-red);
-  --axpo-other-2: #81A4CD;
-  --axpo-other-3: #C589E8;
-  --axpo-other-4: #C69DA5;
-  --axpo-other-5: #215169;
-  --axpo-success: #00A486;
-  --axpo-danger: #B00020;
-  --axpo-disabled: #ECDCDD;
-  --axpo-gray-dark: #3D3D3D;
-  --axpo-gray-light: #D8D8D8;
-  --axpo-gray-0: #F8F8F8;
-  --axpo-gray-1: #EFEFEF;
-  --axpo-gray-2: #D6D6D6;
-  --axpo-gray-3: #BEBEBE;
-  --axpo-gray-4: #9E9E9E;
-  --axpo-gray-5: #7E7E7E;
-  --axpo-gray-6: #5D5D5D;
-  --axpo-gray-7: #3D3D3D;
-  --axpo-gray-8: #292929;
-  --axpo-gray-9: #1F1F1F;
+  --brand-coral-red: #ff5d64;
+  --brand-coral-red-light: #f89aa6;
+  --brand-horizon-blue: #4545cf;
+  --brand-horizon-blue-light: #dadaf5;
+  --brand-horizon-blue-medium: #a2a2e7;
+  --brand-solar-yellow: #ffed57;
+  --brand-yellow-light: #ffedb3;
+  --brand-gray-light: #d8d8d8;
+  --brand-gray: #3d3d3d;
+  --brand-aqua: #00ecd1;
+  --brand-aqua-light: #aaf9f0;
+  --brand-white: #ffffff;
+  
+  /* Interface */
+  --interface-interaction-red: #f2354d;
+  --interface-success-green: #00a486;
+  --interface-danger-red: #b00020;
+  --interface-disabled-red: #ecdcdd;
+  --interface-disabled-gray: #5d5d5d;
+
+  /* Grayscale */
+  --grayscale-gray-0: #f8f8f8;
+  --grayscale-gray-1: #efefef;
+  --grayscale-gray-2: #d6d6d6;
+  --grayscale-gray-3: #bebebe;
+  --grayscale-gray-4: #9e9e9e;
+  --grayscale-gray-5: #7e7e7e;
+  --grayscale-gray-6: #5d5d5d;
+  --grayscale-gray-7: #3d3d3d;
+  --grayscale-gray-8: #292929;
+  --grayscale-gray-9: #1f1f1f;
+  --grayscale-black: #000000;
+
+  /* Brand accent colors */
+  --accent-primary: var(--brand-coral-red);
+  --accent-secondary: var(--brand-horizon-blue);
+  --accent-tertiary: var(--brand-aqua);
+
+  /* Light theme */
+  --theme-light-text-primary: var(--brand-gray);
+  --theme-light-text-secondary: var(--grayscale-gray-5);
+  --theme-light-text-highlight: var(--grayscale-gray-9);
+  --theme-light-text-link: var(--brand-coral-red);
+  --theme-light-text-link-hover: var(--interface-interaction-red);
+  --theme-light-success: var(--interface-success-green);
+  --theme-light-danger: var(--interface-danger-red);
+  --theme-light-disabled: var(--interface-disabled-red);
+  --theme-light-border: var(--grayscale-gray-3);
+  --theme-light-border-soft: var(--brand-gray-light);
+  --theme-light-surface: var(--grayscale-gray-0);
+  --theme-light-background: var(--brand-white);
+
+  /* Dark theme */
+  --theme-dark-text-primary: var(--grayscale-gray-1);
+  --theme-dark-text-secondary: var(--grayscale-gray-4);
+  --theme-dark-text-highlight: var(--brand-white);
+  --theme-dark-text-link: var(--brand-coral-red);
+  --theme-dark-text-link-hover: var(--brand-coral-red-light);
+  --theme-dark-success: var(--brand-aqua-light);
+  --theme-dark-danger: var(--brand-coral-red-light);
+  --theme-dark-disabled: var(--interface-disabled-red);
+  --theme-dark-border: var(--grayscale-gray-6);
+  --theme-dark-border-soft: var(--grayscale-gray-7);
+  --theme-dark-surface: var(--brand-gray);
+  --theme-dark-background: var(--grayscale-gray-9);
+
+  /* Technologies */
+  --tech-hydro-1: var(--brand-horizon-blue-light);
+  --tech-hydro-2: var(--brand-horizon-blue-medium);
+  --tech-hydro-3: #7474dc;
+  --tech-wind-1: var(--brand-aqua-light);
+  --tech-wind-2: #55f2e0;
+  --tech-pv-1: #fff8d9;
+  --tech-pv-2: #fff6ab;
+  --tech-pv: var(--brand-solar-yellow);
+  --tech-hydro: var(--brand-horizon-blue);
+  --tech-wind: var(--brand-aqua);
+  --tech-nuclear: var(--brand-gray);
+  --tech-hydrogen: #00c5ae;
+  --tech-gas: var(--brand-gray-light);
+  --tech-renewables: #85be4c;
+  --tech-biomass: #f1d392;
+  --tech-batteries: #f5b700;
+  --tech-tech-1: #bb9b60;
+  --tech-tech-2: #7e705d;
+  --tech-tech-3: #d27300;
+  --tech-tech-4: #d5b574;
+  --tech-tech-5: #aba9aa;
+  --tech-tech-6: #3d5541;
+  --tech-tech-7: #fdbcc1;
+  --tech-tech-8: #868585;
+  --tech-non-tech-1: var(--brand-coral-red);
+  --tech-non-tech-2: #81a4cd;
+  --tech-non-tech-3: #c589e8;
+  --tech-non-tech-4: #c69da5;
+  --tech-non-tech-5: #215169;
+
+  /* Grid units */
+  --unit-size-4: 4;
+  --unit-size-8: 8;
+  --unit-size-16: 16;
+  --unit-size-24: 24;
+  --unit-size-32: 32;
+  --unit-size-40: 40;
+  --unit-size-48: 48;
+  --unit-size-56: 56;
+  --unit-size-64: 64;
+  --unit-size-72: 72;
+  --unit-size-80: 80;
+  --unit-size-12: 12;
 }
+
 
 html,
 body {
@@ -70,4 +135,18 @@ h2 {
   font-family: Almarena;
   font-size: 30px;
   line-height: 1.2;
+}
+
+section {
+  padding: 16px 32px 32px;
+  margin: 0 auto 40px;
+  border-radius: 12px;
+}
+
+section.preview {
+  background-color: var(--grayscale-gray-0);
+}
+
+section.intro {
+  border: 1px solid var(--grayscale-gray-2);
 }

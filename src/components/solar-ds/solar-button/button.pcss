@@ -2,9 +2,9 @@
   --blackAlpha: rgba(61, 61, 61, 0.94);
   --whiteAlpha: rgba(255, 255, 255, 0.94);
 
-  --primaryColor: var(--axpo-red);
-  --secondaryColor: var(--axpo-gray-dark);
-  --interactionColor: var(--axpo-red-interaction);
+  --primaryColor: var(--accent-primary);
+  --secondaryColor: var(--theme-light-text-primary);
+  --interactionColor: var(--interface-interaction-red);
   --textColor: white;
 }
 
@@ -63,8 +63,8 @@ button.outlined {
 
 
 button.black {
-  --primaryColor: var(--axpo-gray-dark);
-  --interactionColor: var(--axpo-gray-9);
+  --primaryColor: var(--secondaryColor);
+  --interactionColor: var(--theme-light-text-highlight);
   --textColor: var(--whiteAlpha);
 
   &:hover {
@@ -87,17 +87,17 @@ button.ghost {
 }
 
 button.success {
-  background-color: var(--solar-success);
+  background-color: var(--interface-success-green);
 }
 
 button.success:hover {
-  background-color: var(--solar-success);
+  background-color: var(--interface-success-green);
 }
 
 button.danger {
-  background-color: var(--solar-danger);
+  background-color: var(--interface-danger-red);
 }
 
 button.danger:hover {
-  background-color: var(--solar-danger);
+  background-color: var(--interface-danger-red);
 }
