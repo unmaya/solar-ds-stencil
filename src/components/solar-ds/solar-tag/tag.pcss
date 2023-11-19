@@ -13,7 +13,7 @@ span {
   background-color: transparent;
   border: 1px solid transparent;
   color: var(--textColor);
-  padding: 4px 8px;
+  padding: 8px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -30,8 +30,8 @@ span {
 
   & .icon {
     display: inline-block;  
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     margin-left: 4px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -54,7 +54,12 @@ span {
 
   &.small {
     font-size: 12px;
-    padding: 8px 16px;
+    padding: 4px 8px;
+    
+    & .icon {
+      width: 12px;
+      height: 12px;
+    }
   }
 
   &.medium {
