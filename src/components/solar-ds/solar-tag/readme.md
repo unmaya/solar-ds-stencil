@@ -7,11 +7,12 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type     | Default    |
-| --------- | --------- | ----------- | -------- | ---------- |
-| `color`   | `color`   |             | `string` | `'red'`    |
-| `label`   | `label`   |             | `string` | `'Tag'`    |
-| `variant` | `variant` |             | `string` | `'filled'` |
+| Property  | Attribute | Description | Type     | Default               |
+| --------- | --------- | ----------- | -------- | --------------------- |
+| `color`   | `color`   |             | `string` | `'red'`               |
+| `icon`    | `icon`    |             | `string` | `'assets/icon-x.svg'` |
+| `label`   | `label`   |             | `string` | `'Tag'`               |
+| `variant` | `variant` |             | `string` | `'filled'`            |
 
 
 ----------------------------------------------

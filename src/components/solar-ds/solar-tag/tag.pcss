@@ -5,20 +5,21 @@
   --primaryColor: var(--accent-primary);
   --secondaryColor: var(--theme-light-text-primary);
   --interactionColor: var(--interface-interaction-red);
-  --textColor: var(--primaryColor);
+  --textColor: var(--whiteAlpha);
 }
 
 span {
+  --icon-color: var(--primaryColor);
   background-color: transparent;
   border: 1px solid transparent;
-  color: white;
-  padding: 8px 12px;
+  color: var(--textColor);
+  padding: 4px 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
-  line-height: 12px;
+  line-height: 14px;
   font-family: 'Open Sans', sans-serif;
   margin: 0 4px;
   cursor: pointer;
@@ -27,11 +28,27 @@ span {
   text-transform: capitalize;
   font-weight: 600;
 
+  & .icon {
+    display: inline-block;  
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    stroke: var(--icon-color);
+    vertical-align: bottom;
+  }
+
   &.filled {
     background-color: var(--primaryColor);
+    
+    & .icon {
+      --icon-color: white;
+    }
   }
 
   &:hover {
+    --icon-color: white;
     background-color: var(--interactionColor);
   }
 
@@ -42,7 +59,9 @@ span {
 
   &.medium {
     font-size: 14px;
+    padding: 8px 16px;
   }
+
 }
 
 

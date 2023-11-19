@@ -4,7 +4,7 @@
 
 This is a simple proof of concept for our internal design system, the goal is to better connect design with code while centralizing documentation.
 
-This just renders a couple of super simplified components built with Stencil and Storybook for documentation.
+The app renders a couple of rudimentary components built with Stencil and Storybook for documentation. The output is used to connect and automatically reflect any changes in our central documentation.
 
 Storybook deployment for the components:
 https://sds-poc.netlify.app/  

@@ -112,6 +112,8 @@
   --unit-size-72: 72;
   --unit-size-80: 80;
   --unit-size-12: 12;
+
+  --icon-color: var(--theme-light-text-primary);
 }
 
 
