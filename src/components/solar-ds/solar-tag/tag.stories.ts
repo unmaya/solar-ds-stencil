@@ -6,7 +6,7 @@ export default {
     label: { control: 'text' },
     color: {
       control: { type: 'select' },
-      options: ['red', 'black', 'success', 'danger', 'blue'],
+      options: ['red', 'black', 'blue', 'success', 'danger'],
     },
     variant: {
       control: { type: 'select' },
@@ -35,6 +35,12 @@ black.args = {
   label: 'Tag',
 };
 
+blue.args = {
+  variant: 'filled',
+  color: 'blue',
+  label: 'Tag',
+};
+
 success.args = {
   variant: 'filled',
   color: 'success',
@@ -44,11 +50,5 @@ success.args = {
 danger.args = {
   variant: 'filled',
   color: 'danger',
-  label: 'Tag',
-};
-
-blue.args = {
-  variant: 'filled',
-  color: 'blue',
   label: 'Tag',
 };

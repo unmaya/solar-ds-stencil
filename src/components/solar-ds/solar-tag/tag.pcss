@@ -8,7 +8,6 @@
   --textColor: var(--primaryColor);
 }
 
-/* Primary */
 span {
   background-color: transparent;
   border: 1px solid transparent;
@@ -65,6 +64,10 @@ span.black {
   --interactionColor: var(--secondaryColor);
 }
 
+span.blue {
+  --primaryColor: var(--accent-secondary);
+  --interactionColor: var(--accent-secondary);
+}
 
 span.success {
   --primaryColor: var(--interface-success-green);
@@ -74,10 +77,5 @@ span.success {
 span.danger {
   --primaryColor: var(--interface-danger-red);
   --interactionColor: var(--interface-danger-red);
-}
-
-span.blue {
-  --primaryColor: var(--accent-secondary);
-  --interactionColor: var(--accent-secondary);
 }
 
