@@ -100,18 +100,18 @@
   --tech-non-tech-5: #215169;
 
   /* Grid units */
-  --unit-size-4: 4;
-  --unit-size-8: 8;
-  --unit-size-16: 16;
-  --unit-size-24: 24;
-  --unit-size-32: 32;
-  --unit-size-40: 40;
-  --unit-size-48: 48;
-  --unit-size-56: 56;
-  --unit-size-64: 64;
-  --unit-size-72: 72;
-  --unit-size-80: 80;
-  --unit-size-12: 12;
+  --unit-size-4: 4px;
+  --unit-size-8: 8px;
+  --unit-size-16: 16px;
+  --unit-size-24: 24px;
+  --unit-size-32: 32px;
+  --unit-size-40: 40px;
+  --unit-size-48: 48px;
+  --unit-size-56: 56px;
+  --unit-size-64: 64px;
+  --unit-size-72: 72px;
+  --unit-size-80: 80px;
+  --unit-size-12: 12px;
 
   --icon-color: var(--theme-light-text-primary);
 }
@@ -123,18 +123,18 @@ body {
 }
 
 main {
-  padding: 32px;
+  padding: var(--unit-size-32);
 }
 
 h1 {
-  font-family: Almarena Mono;
+  font-family: Almarena Mono, sans-serif;
   font-size: 52px;
   font-weight: 300;
   line-height: 1.2;
 }
 
 h2 {
-  font-family: Almarena;
+  font-family: Almarena, sans-serif;
   font-size: 30px;
   line-height: 1.2;
 }
