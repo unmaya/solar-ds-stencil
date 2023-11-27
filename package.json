@@ -32,9 +32,11 @@
     "@stencil/core": "4.7.2"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.23.3",
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-typescript": "^7.21.5",
     "@stencil-community/postcss": "^2.1.0",
+    "@storybook/addon-docs": "^7.5.3",
     "@storybook/addon-essentials": "^7.0.7",
     "@storybook/addon-interactions": "^7.0.7",
     "@storybook/addon-links": "^7.0.7",

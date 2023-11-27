@@ -7,9 +7,29 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface SolarButton {
+        /**
+          * The text label of the button.
+          * @type {string}
+          * @default "Button"
+         */
         "label": string;
+        /**
+          * The size of the button. Can be 'small', 'medium', or 'large'.
+          * @type {string}
+          * @default "medium"
+         */
         "size": string;
+        /**
+          * The type of the button, determining its primary styling. Acceptable values include 'filled', 'outline', etc.
+          * @type {string}
+          * @default "filled"
+         */
         "type": string;
+        /**
+          * The variant of the button, usually defining its color. Common variants include 'red', 'green', 'blue', etc.
+          * @type {string}
+          * @default "red"
+         */
         "variant": string;
     }
     interface SolarTag {
@@ -39,9 +59,29 @@ declare global {
 }
 declare namespace LocalJSX {
     interface SolarButton {
+        /**
+          * The text label of the button.
+          * @type {string}
+          * @default "Button"
+         */
         "label"?: string;
+        /**
+          * The size of the button. Can be 'small', 'medium', or 'large'.
+          * @type {string}
+          * @default "medium"
+         */
         "size"?: string;
+        /**
+          * The type of the button, determining its primary styling. Acceptable values include 'filled', 'outline', etc.
+          * @type {string}
+          * @default "filled"
+         */
         "type"?: string;
+        /**
+          * The variant of the button, usually defining its color. Common variants include 'red', 'green', 'blue', etc.
+          * @type {string}
+          * @default "red"
+         */
         "variant"?: string;
     }
     interface SolarTag {
