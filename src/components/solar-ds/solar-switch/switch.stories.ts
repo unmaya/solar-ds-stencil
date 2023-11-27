@@ -17,10 +17,8 @@ export const black = Template.bind({});
 
 red.args = {
   color: 'red',
-  label: 'Switch',
 };
 
-red.args = {
+black.args = {
   color: 'black',
-  label: 'Switch',
 };
