@@ -32,6 +32,14 @@ export namespace Components {
          */
         "variant": string;
     }
+    interface SolarSwitch {
+        /**
+          * The color / style of the switch component
+          * @type {string}
+          * @default "red"
+         */
+        "color": string;
+    }
     interface SolarTag {
         "color": string;
         "icon": string;
@@ -46,6 +54,12 @@ declare global {
         prototype: HTMLSolarButtonElement;
         new (): HTMLSolarButtonElement;
     };
+    interface HTMLSolarSwitchElement extends Components.SolarSwitch, HTMLStencilElement {
+    }
+    var HTMLSolarSwitchElement: {
+        prototype: HTMLSolarSwitchElement;
+        new (): HTMLSolarSwitchElement;
+    };
     interface HTMLSolarTagElement extends Components.SolarTag, HTMLStencilElement {
     }
     var HTMLSolarTagElement: {
@@ -54,6 +68,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "solar-button": HTMLSolarButtonElement;
+        "solar-switch": HTMLSolarSwitchElement;
         "solar-tag": HTMLSolarTagElement;
     }
 }
@@ -84,6 +99,14 @@ declare namespace LocalJSX {
          */
         "variant"?: string;
     }
+    interface SolarSwitch {
+        /**
+          * The color / style of the switch component
+          * @type {string}
+          * @default "red"
+         */
+        "color"?: string;
+    }
     interface SolarTag {
         "color"?: string;
         "icon"?: string;
@@ -92,6 +115,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "solar-button": SolarButton;
+        "solar-switch": SolarSwitch;
         "solar-tag": SolarTag;
     }
 }
@@ -100,6 +124,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "solar-button": LocalJSX.SolarButton & JSXBase.HTMLAttributes<HTMLSolarButtonElement>;
+            "solar-switch": LocalJSX.SolarSwitch & JSXBase.HTMLAttributes<HTMLSolarSwitchElement>;
             "solar-tag": LocalJSX.SolarTag & JSXBase.HTMLAttributes<HTMLSolarTagElement>;
         }
     }

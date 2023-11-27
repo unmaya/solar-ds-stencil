@@ -1,17 +1,11 @@
 {
   "sourceType": "unambiguous",
-  "presets": [
-    [
+    "presets": [
       "@babel/preset-env",
-      {
-        "targets": {
-          "chrome": 100
-        }
-      }
+      "@babel/preset-typescript"
     ],
-    "@babel/preset-typescript"
-  ],
-  "plugins": [
-    ["@babel/plugin-proposal-decorators", { "legacy": true }]
-  ]
+    "plugins": [
+      ["@babel/plugin-proposal-decorators", { "legacy": true }],
+      ["@babel/plugin-proposal-class-properties"]
+    ]
 }
