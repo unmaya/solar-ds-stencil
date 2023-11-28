@@ -21,16 +21,12 @@ export class SolarSwitch {
 
   render() {
     return (
-      <span>
       <input 
         type="checkbox" 
         id="checkbox" 
-        class={(this.isActive ? 'active ' : '') + 'switch'} 
+        class={'switch ' + this.color + ' ' + (this.isActive ? 'active ' : '')} 
         onClick={() => this.toggleSwitch()}
         />
-
-        {/* <strong class="label">{this.isActive ? ' On' : ' Off'}</strong> */}
-      </span>
       );
   }
 }

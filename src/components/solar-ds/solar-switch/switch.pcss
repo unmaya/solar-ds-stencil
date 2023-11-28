@@ -31,7 +31,7 @@ input[type=checkbox].switch {
     transition: margin;
     transition-duration: inherit;
     /* box-shadow: 0 0 0 1px var(--current-background), 0 0 var(--focus-ring, ); */
-    box-shadow: 0 0 0 1px var(--accent-primary);
+    box-shadow: 0 0 0 1px var(--switch-color-checked);
   }
   
   &:checked {
@@ -55,4 +55,9 @@ input[type=checkbox].switch {
       /* --focus-ring: .05em .2em hsl(205 80% 50% / .5); */
     }
   }
+}
+
+/* quick and dirty styling for black variant */
+input.switch.black[type=checkbox]:checked {
+  --switch-color-checked: var(--theme-light-text-highlight);
 }

@@ -126,6 +126,14 @@ main {
   padding: var(--unit-size-32);
 }
 
+/* Balance lines and prevent orphans supported by Chrome */
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
 h1 {
   font-family: Almarena Mono, sans-serif;
   font-size: 52px;
